@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be The Change</title>
+    <link rel="stylesheet" href="style.css" type = "text/css"/>
+</head>
+<body>
+    <!-- Designs the Slideshow for our Home Page --> 
+    <div class= "slideshow">
+        
+        <div class="mySlides">
+            <img src="/images/cancer_patient.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="/images/recovery.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="img3.jpg">
+        </div> 
+        
+    </div>
+    
+    <script>
+    
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1} 
+        slides[slideIndex-1].style.display = "block"; 
+        setTimeout(showSlides, 3000); 
+        }
+    </script>
+    hi everyone
+    <h1> What a beautiful morning we are having</h1>
+    <h2>Time to create the Drop bar</h2>
+    
+</body>
+</html>
+
+
+

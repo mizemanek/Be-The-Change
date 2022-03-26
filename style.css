@@ -46,22 +46,16 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
+  /*padding: 22px;*/
+  /*text-align: center;*/
 }
 
-#navbar__logo {
-  /*background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);*/
-  background-color: #ffffff;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
+.logo-image {
+  width: 100px;
+  height: 80px;
+  border-radius: 0%;
+  overflow: visible;
+  margin-top: 0px;
 }
 
 .navbar__menu {
@@ -117,6 +111,39 @@ body {
   color: #4d1aac;
   transition: all 0.3s ease;
 }
+
+#navbar__logo {
+  background-color: #ffffff;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  /*display: flex;*/
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Chalkduster";
+  padding: 20px;
+}
+
+/*.item {
+  width: 100%;
+  padding: 50px;
+  height: 280px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.first {
+  margin-top: 100px;
+}
+.default {
+  margin-top: 64px;
+}
+.col-full {
+  width: 1044px;
+}*/
 
 /* @media screen and (max-width: 960px) {
   .navbar__container {

@@ -1,23 +1,140 @@
-body{
-    padding: 0;
-    margin: 0;
-    background-color: aqua;
-    
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
 }
 
 .slideshow {
-    background-color: green;
-    width: 350px;
-    padding: 3rem;
+  background-color: rgb(254, 255, 188);
+  width: 350px;
+  padding: 3rem;
 }
 
-.mySlides{
+.mySlides {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.navbar {
+  background: #948bee;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  white-space: nowrap;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 2;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbar__logo {
+  /*background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);*/
+  background-color: #ffffff;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navbar__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: felx;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #4d1aac;
+  color: #fff;
+}
+
+.button:hover {
+  background: #a39afd;
+  transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+  color: #4d1aac;
+  transition: all 0.3s ease;
+}
+
+/* @media screen and (max-width: 960px) {
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
+    max-width: 1300px;
+    padding: 0;
+  }
 
-
-
-
-
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolut;
+    top: -1000px;
+  }
+}*/

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Be The Change</title>
+    <link rel="stylesheet" href="style.css" type = "text/css"/>
+
+    <!-- update the version number as needed -->
+    <script src="/__/firebase/9.6.10/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script src="/__/firebase/9.6.10/firebase-auth-compat.js"></script>
+    <script src="/__/firebase/9.6.10/firebase-database-compat.js"></script>
+    <script src="/__/firebase/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="/__/firebase/9.6.10/firebase-functions-compat.js"></script>
+    <script src="/__/firebase/9.6.10/firebase-messaging-compat.js"></script>
+    <script src="/__/firebase/9.6.10/firebase-storage-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  </head>
+  <body>
+     <!-- Designs the Slideshow for our Home Page --> 
+     <div class= "slideshow">
+        
+      <div class="mySlides">
+          <img src="/images/recovery.jpg">
+      </div>
+       
+      
+  </div>
+  
+  <script>
+  
+  let slideIndex = 0;
+  showSlides();
+  function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1} 
+      slides[slideIndex-1].style.display = "block"; 
+      setTimeout(showSlides, 3000); 
+      }
+  </script>
+  hi everyone
+  <h1> What a beautiful morning we are having</h1>
+  <h2>Time to create the Drop bar</h2>
+  
+
+    <script>
+      import { initializeApp } from "firebase/app";
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+      apiKey: "AIzaSyAoHAqbqe1soh61Rf0PwrnDzG8zCgr-xIc",
+      authDomain: "be-the-change-22e6d.firebaseapp.com",
+      projectId: "be-the-change-22e6d",
+      storageBucket: "be-the-change-22e6d.appspot.com",
+      messagingSenderId: "713126963219",
+      appId: "1:713126963219:web:0cd325e284f4f7cbb337e6"
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+    </script>
+
+  </body>
+</html>

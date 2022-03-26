@@ -5,9 +5,13 @@ body {
 }
 
 .slideshow {
-  background-color: rgb(254, 255, 188);
+  background-color: rgb(255, 218, 188);
   width: 350px;
   padding: 3rem;
+  /*display: felx;
+  justify-content: center;
+  align-items: center; 
+  how to center???*/
 }
 
 .mySlides {
@@ -42,6 +46,38 @@ body {
   width: 100%;
   z-index: 999;
   white-space: nowrap;
+}
+
+.box {
+  width: 95%;
+  height: 500px;
+  background: rgb(255, 255, 255);
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  border: 2px solid rgb(201, 201, 201);
+  box-shadow: 5px 5px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box:hover {
+  opacity: 0.7;
+  box-shadow: 5px 5px rgb(162, 160, 255);
+}
+
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 100%;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    display: center;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .navbar__container {
@@ -133,6 +169,25 @@ body {
   font-size: 2rem;
   font-family: "Chalkduster";
   padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .logo-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #navbar__logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar__menu {
+    font-size: 0.7rem;
+    display: flex;
+  }
 }
 
 /*.item {
